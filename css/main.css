@@ -1,0 +1,199 @@
+/* ----------------------------
+simple reset
+---------------------------- */
+
+html, body, ul, ol, li, form, fieldset, legend
+{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+
+fieldset,img { border: 0; }
+
+legend { color: #000; }
+
+li { list-style: none; }
+
+sup { vertical-align: text-top; }
+
+sub { vertical-align: text-bottom; }
+
+table
+{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td
+{
+  text-align: left;
+  vertical-align: top;
+  font-weight: normal;
+}
+
+input, textarea, select
+{
+  font-size: 110%;
+  line-height: 1.1;
+}
+
+abbr, acronym
+{
+  border-bottom: .1em dotted;
+  cursor: help;
+}
+
+
+
+
+/*
+    logo-red:  #bc1e2c
+*/
+
+
+@font-face {
+  font-family: "Raleway ExtraLight";
+  src: url("../fonts/Raleway-ExtraLight.ttf");
+}
+
+.feature-img {
+    width: 100%;
+}
+
+.contact a[href^="tel:"]:before {
+    content: "☎";
+    margin-right: 0.5em;
+}
+
+.tel {
+    font-size: 150%;
+}
+
+a {
+    color: #bc1e2c;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0.5em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em 0;
+}
+    
+    .component {
+        flex: 0 0 auto;
+    }
+
+    /* logo */
+    .logo {
+        color: #bc1e2c;
+        font-family: "Josefin Slab",serif;
+    }
+    header h1 {
+        
+        font-size: 2.5em;
+        font-weight: normal;
+        margin: 0;
+        width: -moz-min-content;
+        width: -webkit-min-content;
+        width: min-content;
+    }
+
+    header a {
+        align-self: center;
+    }
+
+        /* call button */
+        header svg {
+            fill: #FFCF13;
+            width: 3.5em;
+            transform: scaleX(-1);
+        }
+    
+    /*header location*/
+    #location {
+        align-self: flex-end;
+        display: none;
+        margin-bottom: .3em;
+        text-align: right;
+    }
+
+        header p {
+            color: #606060;
+            font-size: 1.7em;
+            margin-bottom: 0;
+            
+        }
+
+        header .colored {
+            color: orange;
+        }
+
+.abstract {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+    h2 {
+        font-family: "Raleway ExtraLight", Raleway, Arial, sans-serif;
+        font-size: 56px;
+        margin: 50px 20px;
+        font-weight: 200;
+    }
+
+.container {
+    margin-left: 1em;
+}
+
+
+@media (min-width: 640px) {
+    #call_button {
+        display: none;
+    }
+
+    #location {
+        display: block;
+    }
+}
+body {
+    background: url("../images/eight_horns.png");
+    display: flex;  /*sticky footer*/
+    min-height: 100vh;  /*sticky footer*/
+    flex-direction: column; /*sticky footer*/
+    font-family: 'Raleway ExtraLight', Raleway, Arial, sans-serif;
+}
+#main {
+    flex: 1;    /*sticky footer*/
+}
+
+header, 
+footer {
+    background-color: rgba(255,255,255,0.6);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    font-size: 1.4em;
+}
+footer nav, 
+footer .contact {
+    width: -webkit-max-content;
+    text-align: center;
+}
+
+.group {
+    display: inline-block;
+}
+
+.fb {
+    width: 80px;
+}
